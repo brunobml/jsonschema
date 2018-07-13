@@ -1,0 +1,63 @@
+{
+    "FinantialTags": "object",
+    "properties": {
+      "Workload": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 20
+      },
+      "BusinessContact": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 20
+      },
+      "CostCenter": {
+        "type": "integer",
+        "minLength": 0,
+        "maxLength": 20,
+        "minimum": 0,
+        "maximum": 100
+      },
+      "AFE": {
+        "type": "integer",
+        "minLength": 0,
+        "maxLength": 20,
+        "minimum": 0,
+        "maximum": 100
+      },
+      "WorkOrder": {
+        "type": "integer",
+        "minLength": 0,
+        "maxLength": 20,
+        "minimum": 0,
+        "maximum": 100
+      },
+      "CostLimit": {
+        "type": "number",
+        "minLength": 0,
+        "maxLength": 20,
+        "minimum": 0,
+        "maximum": 100
+      },
+      "StartDate": {
+        "description": "Date time in ticks.",
+        "type": "string",
+        "format": "date-time"
+      },
+      "EndDate": {
+        "description": "Date time in ticks.",
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "required": [
+      "Workload",
+      "BusinessContact",
+      "CostCenter",
+      "AFE",
+      "WorkOrder",
+      "CostLimit",
+      "StartDate",
+      "EndDate"
+    ]
+  }
